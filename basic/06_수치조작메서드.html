@@ -62,7 +62,16 @@
         $('.p2').outerWidth(100).outerHeight(100)
 
         // 요소의 위치
-        // 
+        // offset() //요소가 문서에서 수평, 수직으로  떨어져 있는 값을 반환
+        // position() //기준이 되는 요소에서의 위치값을 반환
+        console.log($('.box').offset().top) //box가 wrap에서 얼마나 떨어져있는지 그 값을 반환
+        console.log($('.box').position().top) //box가 wrap에서 얼마나 떨어져있는지 그 값을 반환
+        console.log($('.box').position().left) //box가 wrap에서 얼마나 떨어져있는지 그 값을 반환
+
+        //스크롤바의 위치
+        $(window).scroll(function(){
+            console.log($(window).scrollTop())
+        })
     </script>
  
 
