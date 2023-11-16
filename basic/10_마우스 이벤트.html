@@ -22,12 +22,14 @@
 <body>
     <h1>마우스 이벤트</h1>
     <div class="wrap">
+
         <section>
             <button class="btn1">버튼 1</button>
             <p>내용 1</p>
             <button class="btn2">버튼 2</button>
             <p>내용 2</p>
         </section>
+
         <script>
             $('.btn1').click(function(){
                 $(this).next().css('background','red')
@@ -62,11 +64,34 @@
             </ul>
         </section>
 
+        <script>
+            //mouseover, mouseleave / mouseenter, mouseout
+            $('#box_1').on('mouseover',function(){
+                $('#box_1 li').css('background','yellow')
+            })
+            $('#box_1').on('mouseleave',function(){
+                $('#box_1 li').css('background','red')
+            })
+
+            $('#box_2').on('mouseenter',function(){
+                $('#box_2 li').css('background','yellow')
+            })
+            $('#box_2').on('mouseout',function(){
+                $('#box_2 li').css('background','red')
+            })
+        </script>
+
         <section>
             <h3>mouse move</h3>
-            <p>x: <span class="pose X"></span></p>
-            <p>y: <span class="pose Y"></span></p>
+            <p>x: <span class="posX"></span></p>
+            <p>y: <span class="posY"></span></p>
         </section>
+        <script>
+            $(document).on('mousemove', function(event){
+                $('.posX').text(event.pageX)
+                $('.posY').text(event.pageY)
+            })
+        </script>
 
         <section>
             <select name="" id="site">
@@ -75,8 +100,26 @@
                 <option value="https://naver.com">네이버</option>
             </select>
             <p class="site">hello!</p>
-            <p><a href="https://daum.net" class="btn">이벤트 객체</a></p>
+            <p><a href="#" class="btn">이벤트 객체</a></p>
         </section>
+
+        <script>
+            //scroll event
+            $(window).scroll(function(){
+                console.log($(this).scrollTop())
+            })
+
+            //change event
+            $('#site').on('change',function(){
+                $('.site').text($(this).val())
+            })
+
+            //이벤트 객체
+            $('.btn').click(function(){
+                event.preventDefault() // or  <p><a href="#x" class="btn">이벤트 객체</a></p> _이벤트 객체 눌렀을 때 위로 가는 것을 방지
+                console.log(event.target.text)
+            })
+        </script>
     </div>
 
    
