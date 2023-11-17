@@ -1,5 +1,8 @@
 # jquery 기본연습
 
+- mockaroo 목업데이터 사이트
+- https://www.mockaroo.com/
+
 ## jquery basic
 - animate()
 ...
