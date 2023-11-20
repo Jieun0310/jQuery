@@ -3,45 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <title>slick slide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slide.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- 순서 바뀌면 안됨. -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 </head>
+
 <body>
     <div class="container">
         <div class="header_container">
-            <header></header>
-            <div class="logo"><a href="#">가나다</a></div>
-            <ul class="gnb">
-                <li><a href="#">홈</a></li>
-                <li><a href="#">소개</a></li>
-                <li><a href="#">서비스</a></li>
-                <li><a href="#">가치</a></li>
-                <li><a href="#">홍보</a></li>
-                <li><a href="#">투자</a></li>
-                <li><a href="#">채용</a></li>
-            </ul>
-            <button>Login</button>
+            <header>
+                <div class="logo"><a href="#">가나다</a></div>
+                <ul class="gnb">
+                    <li class="active"><a href="#" >홈</a></li>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">가치</a></li>
+                    <li><a href="#">홍보</a></li>
+                    <li><a href="#">투자</a></li>
+                    <li><a href="#">채용</a></li>
+                </ul>
+                <button>Login</button>
+            </header>
         </div>
 
         <div class="slider_container">
             <div class="slide_01">
-                <div class="item_01"></div>
-                <div class="item_02"></div>
-                <div class="item_03"></div>
+                <div class="item item_01">1</div>
+                <div class="item item_02">2</div>
+                <div class="item item_03">3</div>
             </div>
+
             <div class="slide_text">
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <i class="xi-son"></i>
+                <h4>Lorem ipsum dolor.</h4>
+                <i class="xi-sun"></i>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, deleniti. Et placeat dolorem, magnam, facilis velit deserunt ipsa esse explicabo repellendus beatae rerum voluptatem vitae. Voluptatem quae ullam quam quis.
                 </p>
                 <a href="#">둘러보기</a>
             </div>
+
             <div class="arrows">
                 <img class="prev" src="../../images/prev_arrow.png" alt="">
                 <img class="next" src="../../images/next_arrow.png" alt="">
             </div>
         </div>
+
+        <section>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, fuga.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in, expedita facere omnis laborum quasi totam distinctio voluptatibus corrupti, laudantium ab deleniti. Unde illo blanditiis eos eveniet, quaerat delectus. Ad accusamus molestias, atque facere ipsa, amet dignissimos repellendus, assumenda nemo consequuntur odio expedita fugiat corporis eum facilis. Fugit tempora est maxime iste laborum iure aut laudantium, suscipit temporibus maiores dolor!</p>
+            <ul>
+                <li><img src="../../images/img_01.jpg" alt=""></li>
+                <li><img src="../../images/img_02.jpg" alt=""></li>
+                <li><img src="../../images/img_03.jpg" alt=""></li>
+                <li><img src="../../images/img_04.jpg" alt=""></li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem maiores molestias mollitia optio voluptatum exercitationem reiciendis commodi quod, maxime odit quia fugiat dolorem nesciunt id cupiditate rerum quos ad nemo eos perferendis velit asperiores doloremque possimus! Reiciendis cum praesentium ipsum ipsa consequuntur suscipit soluta quasi accusantium voluptates, delectus blanditiis.</p>
+        </section>
+
+
+        <div class="slide_container">
+            <div class="slide_02">
+                <img src="../../images/img_01_b.jpg" alt="">
+                <img src="../../images/img_02_b.jpg" alt="">
+                <img src="../../images/img_03_b.jpg" alt="">
+                <img src="../../images/img_04_b.jpg" alt="">
+            </div>
+            <div class="control">
+                <div class="slide_counter">1 / 4</div>
+                <div class="btns">
+                    <i class="xi-angle-left"></i>
+                    <i class="xi-pause"></i>
+                    <i class="xi-angle-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex esse a animi saepe neque nemo voluptatum dolore in placeat ipsa quia, est odit accusantium porro, repellendus necessitatibus molestias voluptas ipsam maiores accusamus deserunt nam recusandae! Odit, a accusantium necessitatibus amet veniam dolore aliquid earum unde quis porro ad quisquam quidem obcaecati repellendus eligendi est esse blanditiis sunt cupiditate provident. Ipsam ullam laudantium aperiam, eveniet debitis consequatur deleniti sed nihil dolores quisquam tempore et. Neque facere, non esse exercitationem voluptatum architecto!
+            </p>
+
+            <div class="banner">
+                <p>안녕 jQuery</p>
+            </div>
+
+       
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis id, earum, iste voluptas quo asperiores esse culpa alias eaque cupiditate. Quis, atque necessitatibus? Ut unde excepturi, inventore natus, distinctio expedita assumenda autem in quidem earum dolorum eos quis tenetur pariatur veniam quos soluta? Odio repellat placeat voluptatibus nemo tempore commodi quidem ullam harum soluta vitae unde ut excepturi cupiditate, eligendi est architecto provident fugit quaerat distinctio aperiam natus consequuntur. Architecto nulla ratione inventore cupiditate perferendis hic tempora enim odit.</p>
+        </section>
+
+        <div class="slide_container">
+            <ul class="slide_03">
+                <li><img src="../../images/img_01.jpg" alt=""></li>
+                <li><img src="../../images/img_02.jpg" alt=""></li>
+                <li><img src="../../images/img_03.jpg" alt=""></li>
+                <li><img src="../../images/img_04.jpg" alt=""></li>
+                <li><img src="../../images/img_01.jpg" alt=""></li>
+                <li><img src="../../images/img_02.jpg" alt=""></li>
+                <li><img src="../../images/img_03.jpg" alt=""></li>
+                <li><img src="../../images/img_04.jpg" alt=""></li>
+            </ul>
+            <div class="arrow">
+                <i class="xi-long-arrow-left"></i>
+                <i class="xi-long-arrow-right"></i>
+            </div>
+        </div>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut laudantium veniam corporis commodi optio quas voluptas ducimus, suscipit earum cumque debitis, voluptatem velit libero. Voluptatibus est impedit possimus obcaecati ut aperiam, eaque iusto consequuntur cupiditate voluptates voluptatem id doloremque esse ipsa adipisci, dolore dicta. Accusantium est magni cumque quo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut laudantium veniam corporis commodi optio quas voluptas ducimus, suscipit earum cumque debitis, voluptatem velit libero. Voluptatibus est impedit possimus obcaecati ut aperiam, eaque iusto consequuntur cupiditate voluptates voluptatem id doloremque esse ipsa adipisci, dolore dicta. Accusantium est magni cumque quo?</p>
+        </section>
+
+        <script>
+            $(function(){
+                $('.slide_01').slick({
+                    dots:true
+                })
+                
+            })
+        </script>
+    
     </div>
 </body>
 </html>
