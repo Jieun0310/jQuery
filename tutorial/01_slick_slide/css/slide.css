@@ -135,8 +135,59 @@
     }
 }
 
-/* slick-dots */
+/* slick-dots */     /* 인라인요소보다  !importan 가 더 우선 순위 */
 .slick-dots{
-    /* 인라인요소보다  !importan 가 더 우선 순위 */
-    bottom: 20px;
+    bottom: 30px;
 }
+
+.slick-dots li button::before{
+    content: '';
+}
+
+.slick-dots li{
+    width: 30px;
+    height: 4px;
+    background-color: rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+
+.slick-dots li.slick-active{
+    background-color: rgba(0,0,0,1);
+    width: 80px;
+}
+
+/* slid_02 */
+.slide_02{}
+
+.control{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.control .slide_counter{
+    height: 30px;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.control .btns{
+    display: flex;
+    gap: 10px;
+}
+
+.control .btns i{
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+} 
